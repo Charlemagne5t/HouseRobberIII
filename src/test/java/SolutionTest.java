@@ -21,7 +21,6 @@ public class SolutionTest {
         root.left.left = new TreeNode(1);
         root.left.right = new TreeNode(3);
         root.right.right = new TreeNode(1);
-        root.right.right = new TreeNode(1);
         int output = 9;
         Assert.assertEquals(output, new Solution().rob(root));
     }
@@ -32,7 +31,7 @@ public class SolutionTest {
         root.left = new TreeNode(1);
         root.right = new TreeNode(3);
         root.left.right = new TreeNode(4);
-        int output = 9;
+        int output = 7;
         Assert.assertEquals(output, new Solution().rob(root));
     }
 }
